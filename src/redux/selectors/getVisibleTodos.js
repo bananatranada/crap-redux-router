@@ -1,24 +1,22 @@
 import { createSelector } from 'reselect';
 
-import * as visibilityFilterModule from '../modules/visibilityFilter';
+import * as visibilityFilterModule from '../reducers/visibilityFilter';
 
 const getVisibilityFilter = state => state.visibilityFilter;
-const getTodos = state => state.todos;
+const getTodos = state => state.todos.items;
 
-const getVisibleTodos = createSelector(
-  [ getVisibilityFilter, getTodos ],
+export const getVisibleTodos = createSelector(
+  [getVisibilityFilter, getTodos],
   (visibilityFilter, todos) => {
     switch (visibilityFilter) {
       case visibilityFilterModule.SHOW_ALL:
         return todos;
       case visibilityFilterModule.SHOW_COMPLETED:
-        return todos.filter(t => t.completed)
+        return todos.filter(t => t.completed);
       case visibilityFilterModule.SHOW_ACTIVE:
-        return todos.filter(t => !t.completed)
+        return todos.filter(t => !t.completed);
       default:
         return todos;
     }
   }
-)
-
-export default getVisibleTodos;
+);

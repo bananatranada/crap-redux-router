@@ -1,24 +1,21 @@
 import { connect } from 'react-redux';
 
-import * as todosModule from '../../redux/modules/todos';
+import * as actions from '../../redux/actions';
+import * as selectors from '../../redux/selectors';
 import TodoList from '../../components/TodoList/TodoList';
-import { getVisibleTodos } from '../../redux/selectors';
 
 const mapStateToProps = (state, props) => {
   return {
-    todos: getVisibleTodos(state)
-  }
-}
+    todos: selectors.getVisibleTodos(state),
+  };
+};
 
 const mapDispatchToProps = (dispatch, props) => ({
   onTodoClick: id => {
-    dispatch(todosModule.toggleTodo(id))
-  }
-})
+    dispatch(actions.toggleTodo(id));
+  },
+});
 
-const VisibleTodoList = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TodoList)
+const VisibleTodoList = connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
 export default VisibleTodoList;

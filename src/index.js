@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 import './index.css';
-import createHistory from 'history/createBrowserHistory';
+import createHistory from 'history/createHashHistory';
 
 import Root from './components/Root/Root';
 import configureStore from './redux/store/configureStore';
@@ -16,3 +17,4 @@ ReactDOM.render(
   </Root>,
   document.getElementById('root')
 );
+registerServiceWorker();

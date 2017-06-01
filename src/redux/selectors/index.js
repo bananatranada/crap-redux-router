@@ -1,1 +1,1 @@
-export { default as getVisibleTodos } from './getVisibleTodos';
+export * from './getVisibleTodos';
