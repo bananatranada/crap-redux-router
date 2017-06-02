@@ -1,12 +1,12 @@
-export const PAGE_SET_IS_LOADED = 'PAGE_SET_PAGE_LOADED';
+export const PAGE_SET_IS_LOADED = 'PAGE_SET_IS_LOADED';
 
-export const setPageLoaded = isPageLoaded => ({
+export const pageSetIsLoaded = isPageLoaded => ({
   type: PAGE_SET_IS_LOADED,
   isPageLoaded,
 });
 
-export const PAGE_INIT_PAGE_HOME = 'PAGES_INIT_PAGE_HOME';
+export const PAGE_INIT_HOME = 'PAGE_INIT_HOME';
 
-export const initPageHome = () => ({
-  type: PAGE_INIT_PAGE_HOME,
+export const pageInitHome = () => ({
+  type: PAGE_INIT_HOME,
 });

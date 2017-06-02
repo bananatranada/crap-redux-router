@@ -12,7 +12,7 @@ class InitPageHome extends Component {
   }
 
   render() {
-    return <Home isPageLoaded={this.props.isPageLoaded} />;
+    return <Home isPageLoaded={this.props.isLoaded} />;
   }
 }
 
@@ -21,7 +21,7 @@ const mapStateToProps = (state, props) => ({
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
-  loadPage: () => dispatch(actions.initPageHome()),
+  loadPage: () => dispatch(actions.pageInitHome()),
 });
 
 InitPageHome = connect(mapStateToProps, mapDispatchToProps)(InitPageHome);

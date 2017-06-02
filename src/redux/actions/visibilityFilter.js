@@ -1,6 +1,13 @@
 export const VISIBILITY_FILTER_SET = 'VISIBILITY_FILTER_SET';
 
-export const setVisibilityFilter = filter => ({
+export const VISIBILITY_FILTER_STATE_SHOW_ALL =
+  'VISIBILITY_FILTER_STATE_SHOW_ALL';
+export const VISIBILITY_FILTER_STATE_SHOW_ACTIVE =
+  'VISIBILITY_FILTER_STATE_SHOW_ACTIVE';
+export const VISIBILITY_FILTER_STATE_SHOW_COMPLETED =
+  'VISIBILITY_FILTER_STATE_SHOW_COMPLETED';
+
+export const visibilityFilterSet = filter => ({
   type: VISIBILITY_FILTER_SET,
   filter,
 });

@@ -1,7 +1,7 @@
 import * as actions from '../actions';
 
 const defaultState = {
-  isLoaded: false,
+  isLoaded: false, // even if no fetching, each page should explicitly set this to true
 };
 
 export default function todosReducer(state = defaultState, action) {

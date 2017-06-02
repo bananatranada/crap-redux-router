@@ -9,7 +9,7 @@ const mapStateToProps = (state, props) => ({
 
 const mapDispatchToProps = (dispatch, props) => ({
   onClick: () => {
-    dispatch(actions.setVisibilityFilter(props.filter));
+    dispatch(actions.visibilityFilterSet(props.filter));
   },
 });
 
