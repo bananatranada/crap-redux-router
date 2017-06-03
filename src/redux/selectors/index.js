@@ -1,7 +1,7 @@
 export * from './page';
 export * from './todos';
 export * from './visibilityFilter';
-export * from './getVisibleTodos';
+export * from './makeGetVisibleTodo';
 
 // import { createSelector } from 'reselect';
 //

@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
 
-import Todo from '../Todo/Todo';
+import TodoContainer from '../../containers/TodoContainer/TodoContainer';
 
 class TodoList extends Component {
   render() {
     console.log('TodoList', 'render()');
     return (
       <ul>
-        {this.props.todos.map(todo => (
-          <Todo
-            key={todo.id}
-            {...todo}
-            handleTodoToggle={() =>
-              this.props.handleTodoToggle(todo.id, !todo.completed)}
-          />
+        {this.props.todoIds.map(todoId => (
+          <TodoContainer key={todoId} todoId={todoId} />
         ))}
       </ul>
     );
