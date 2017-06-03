@@ -4,7 +4,9 @@ export const PAGE_INIT_HOME = 'PAGE_INIT_HOME';
 export function pageSetIsLoaded(isPageLoaded) {
   return {
     type: PAGE_SET_IS_LOADED,
-    isPageLoaded,
+    payload: {
+      isPageLoaded,
+    },
   };
 }
 

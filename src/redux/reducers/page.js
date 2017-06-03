@@ -9,7 +9,7 @@ export default function todosReducer(
   switch (action.type) {
     case actions.PAGE_SET_IS_LOADED:
       return {
-        isPageLoaded: action.isPageLoaded,
+        isPageLoaded: action.payload.isPageLoaded,
       };
     default:
       return state;

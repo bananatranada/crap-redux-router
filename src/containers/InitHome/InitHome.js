@@ -7,7 +7,7 @@ import Home from '../../pages/Home/Home';
 class InitPageHome extends Component {
   componentDidMount() {
     // make sure all the fetches are returned in order to change isLoading to false (also make sure images and other media are loaded
-    // actions.initPageHome();
+    // actions.pageInitHome();
     this.props.loadPage();
   }
 

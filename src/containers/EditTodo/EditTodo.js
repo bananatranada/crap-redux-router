@@ -1,16 +1,22 @@
 import { connect } from 'react-redux';
 
 import * as actions from '../../redux/actions';
+import * as selectors from '../../redux/selectors';
 import Todo from '../../components/Todo/Todo';
 
-const mapStateToProps = (state, props) => ({});
+const mapStateToProps = (state, props) => {
+  // use prop's id from TodoList and get the specific todo
+  return {
+    todo:
+  };
+};
 
 const mapDispatchToProps = (dispatch, props) => ({
-  handleToggleRequest: id => {
-    dispatch(actions.todosToggleRequest(id));
+  handleTodoToggle: (id, completed) => {
+    dispatch(actions.todosToggleRequest(id, completed));
   },
 });
 
-const EditTodo = connect(mapStateToProps, mapDispatchToProps)(Todo);
+const TodoContainer = connect(mapStateToProps, mapDispatchToProps)(Todo);
 
-export default EditTodo;
+export default TodoContainer;

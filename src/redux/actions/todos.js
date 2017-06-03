@@ -10,23 +10,6 @@ export const TODOS_TOGGLE_REQUEST = 'TODOS_TOGGLE_REQUEST';
 export const TODOS_TOGGLE_SUCCESS = 'TODOS_TOGGLE_SUCCESS';
 export const TODOS_TOGGLE_FAILURE = 'TODOS_TOGGLE_FAILURE';
 
-let nextTodoId = 0;
-
-export function todosAdd(text) {
-  return {
-    type: TODOS_ADD,
-    id: nextTodoId++,
-    text,
-  };
-}
-
-export function todosToggle(id) {
-  return {
-    type: TODOS_TOGGLE,
-    id,
-  };
-}
-
 export function todosFetchRequest() {
   return {
     type: TODOS_FETCH_REQUEST,
@@ -35,8 +18,8 @@ export function todosFetchRequest() {
 
 export function todosFetchSuccess(todos) {
   return {
-    todos,
     type: TODOS_FETCH_SUCCESS,
+    todos,
   };
 }
 
@@ -50,7 +33,6 @@ export function todosFetchFailure(error) {
 export function todosAddRequest(text) {
   return {
     type: TODOS_ADD_REQUEST,
-    id: nextTodoId++,
     text,
   };
 }
@@ -70,7 +52,6 @@ export function todosAddFailure(error) {
 }
 
 export function todosToggleRequest(id, completed) {
-  console.log(completed);
   return {
     type: TODOS_TOGGLE_REQUEST,
     id,

@@ -3,10 +3,17 @@ import { createSelector } from 'reselect';
 import * as actions from '../actions';
 import * as visibilityFilterSelectors from './visibilityFilter';
 import * as todosSelectors from './todos';
+import * as schemas from '../schemas';
 
 export const getVisibleTodos = createSelector(
-  [visibilityFilterSelectors.visibilityFilterGet, todosSelectors.todosGetItems],
-  (visibilityFilter, todos) => {
+  [
+    visibilityFilterSelectors.getVisibilityFilter,
+    todosSelectors.getTodosResult,
+    todosSelectors.getTodosEntities,
+  ],
+  (visibilityFilter, todosResult, todosEntities) => {
+    console.log('getVisibleTodos', 'hi');
+    const todos = schemas.denormalizeTodos(todosResult, todosEntities);
     switch (visibilityFilter) {
       case actions.VISIBILITY_FILTER_STATE_SHOW_ALL:
         return todos;

@@ -9,14 +9,10 @@ const todoReducer = (state = {}, action) => {
         completed: false,
       };
     case actions.TODOS_TOGGLE_SUCCESS:
-      if (state.id !== action.todo.id) {
-        return state;
-      }
       return {
-        ...state,
+        ...state.entities.todos[action.todo.id],
         completed: action.todo.completed,
       };
-
     default:
       return state;
   }
@@ -24,7 +20,8 @@ const todoReducer = (state = {}, action) => {
 
 export default function todosReducer(
   state = {
-    items: [],
+    entities: {},
+    result: [],
     isFetching: false,
     fetchError: '',
     isAdding: false,
@@ -44,7 +41,7 @@ export default function todosReducer(
       return {
         ...state,
         isFetching: false,
-        items: action.todos,
+        ...action.todos,
       };
     case actions.TODOS_FETCH_FAILURE:
       return {
@@ -61,7 +58,14 @@ export default function todosReducer(
       return {
         ...state,
         isAdding: false,
-        items: [...state.items, todoReducer(undefined, action)],
+        result: [...state.result, action.todo.id],
+        entities: {
+          ...state.entities,
+          todos: {
+            ...state.entities.todos,
+            [action.todo.id]: todoReducer(undefined, action),
+          },
+        },
       };
     case actions.TODOS_ADD_FAILURE:
       return {
@@ -75,11 +79,16 @@ export default function todosReducer(
         isToggling: true,
       };
     case actions.TODOS_TOGGLE_SUCCESS:
-      console.log(action);
       return {
         ...state,
         isToggling: false,
-        items: state.items.map(t => todoReducer(t, action)),
+        entities: {
+          ...state.entities,
+          todos: {
+            ...state.entities.todos,
+            [action.todo.id]: todoReducer(state, action),
+          },
+        },
       };
     case actions.TODOS_TOGGLE_FAILURE:
       return {

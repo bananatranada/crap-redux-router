@@ -1,1 +1,1 @@
-export const visibilityFilterGet = state => state.visibilityFilter;
+export const getVisibilityFilter = state => state.visibilityFilter;

@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fe3cb62-428b-43f8-adae-e67599ca6f5c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/containers/FetchTodos/FetchTodos.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/db.json" afterPath="$PROJECT_DIR$/api/db.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Todo/Todo.js" afterPath="$PROJECT_DIR$/src/components/Todo/Todo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TodoList/TodoList.js" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/config.dev.js" afterPath="$PROJECT_DIR$/src/config/config.dev.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/AddTodo/AddTodo.js" afterPath="$PROJECT_DIR$/src/containers/AddTodo/AddTodo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/VisibleTodoList/VisibleTodoList.js" afterPath="$PROJECT_DIR$/src/containers/VisibleTodoList/VisibleTodoList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js" afterPath="$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/InitHome/InitHome.js" afterPath="$PROJECT_DIR$/src/containers/InitHome/InitHome.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/actions/page.js" afterPath="$PROJECT_DIR$/src/redux/actions/page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/actions/todos.js" afterPath="$PROJECT_DIR$/src/redux/actions/todos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/actions/visibilityFilter.js" afterPath="$PROJECT_DIR$/src/redux/actions/visibilityFilter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/reducers/page.js" afterPath="$PROJECT_DIR$/src/redux/reducers/page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/reducers/todos.js" afterPath="$PROJECT_DIR$/src/redux/reducers/todos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/reducers/visibilityFilter.js" afterPath="$PROJECT_DIR$/src/redux/reducers/visibilityFilter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/sagas/index.js" afterPath="$PROJECT_DIR$/src/redux/sagas/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/sagas/page.js" afterPath="$PROJECT_DIR$/src/redux/sagas/page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/sagas/todos.js" afterPath="$PROJECT_DIR$/src/redux/sagas/todos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/selectors/getVisibleTodos.js" afterPath="$PROJECT_DIR$/src/redux/selectors/getVisibleTodos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redux/selectors/page.js" afterPath="$PROJECT_DIR$/src/redux/selectors/page.js" />
@@ -39,108 +37,12 @@
     <favorites_list name="react-todos" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="todos.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/actions/todos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TodoInput.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TodoInput/TodoInput.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Todo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Todo/Todo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TodoList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VisibleTodoList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/VisibleTodoList/VisibleTodoList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getVisibleTodos.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/selectors/getVisibleTodos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditTodo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilterLink.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/FilterLink/FilterLink.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="todos.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/sagas/todos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="todos.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/redux/reducers/todos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="390">
+              <caret line="81" column="6" lean-forward="false" selection-start-line="81" selection-start-column="6" selection-end-line="91" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -154,8 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/redux/actions/app.js" />
-        <option value="$PROJECT_DIR$/src/redux/sagas/app.js" />
         <option value="$PROJECT_DIR$/src/redux/actions/pages.js" />
         <option value="$PROJECT_DIR$/src/redux/sagas/pages.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/pages.js" />
@@ -167,7 +67,6 @@
         <option value="$PROJECT_DIR$/src/containers/InitHome/InitHome.js" />
         <option value="$PROJECT_DIR$/src/containers/FilterLink/FilterLink.js" />
         <option value="$PROJECT_DIR$/src/redux/selectors/index.js" />
-        <option value="$PROJECT_DIR$/src/redux/sagas/page.js" />
         <option value="$PROJECT_DIR$/src/redux/sagas/index.js" />
         <option value="$PROJECT_DIR$/src/redux/types.js" />
         <option value="$PROJECT_DIR$/src/redux/sagas.js" />
@@ -181,28 +80,31 @@
         <option value="$PROJECT_DIR$/src/redux/rootReducer.js" />
         <option value="$PROJECT_DIR$/src/redux/modules/page.js" />
         <option value="$PROJECT_DIR$/src/redux/store/configureStore.dev.js" />
-        <option value="$PROJECT_DIR$/src/redux/actions/page.js" />
-        <option value="$PROJECT_DIR$/src/redux/reducers/page.js" />
         <option value="$PROJECT_DIR$/src/containers/AddTodo/AddTodo.js" />
-        <option value="$PROJECT_DIR$/src/redux/actions/visibilityFilter.js" />
-        <option value="$PROJECT_DIR$/src/redux/reducers/visibilityFilter.js" />
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
-        <option value="$PROJECT_DIR$/src/redux/selectors/todos.js" />
-        <option value="$PROJECT_DIR$/src/redux/selectors/visibilityFilter.js" />
-        <option value="$PROJECT_DIR$/src/redux/selectors/page.js" />
         <option value="$PROJECT_DIR$/src/utils/fetch.js" />
         <option value="$PROJECT_DIR$/src/config/config.dev.js" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
         <option value="$PROJECT_DIR$/src/utils/api.js" />
         <option value="$PROJECT_DIR$/api/db.json" />
-        <option value="$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js" />
         <option value="$PROJECT_DIR$/api/routes.json" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/Todo/Todo.js" />
+        <option value="$PROJECT_DIR$/src/redux/selectors/page.js" />
+        <option value="$PROJECT_DIR$/src/redux/selectors/visibilityFilter.js" />
+        <option value="$PROJECT_DIR$/src/redux/sagas/page.js" />
+        <option value="$PROJECT_DIR$/src/redux/selectors/todos.js" />
+        <option value="$PROJECT_DIR$/src/redux/schemas/index.js" />
+        <option value="$PROJECT_DIR$/src/redux/schemas/todos.js" />
         <option value="$PROJECT_DIR$/src/containers/VisibleTodoList/VisibleTodoList.js" />
-        <option value="$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
-        <option value="$PROJECT_DIR$/src/redux/sagas/todos.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/page.js" />
+        <option value="$PROJECT_DIR$/src/redux/actions/visibilityFilter.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/page.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/visibilityFilter.js" />
         <option value="$PROJECT_DIR$/src/redux/actions/todos.js" />
+        <option value="$PROJECT_DIR$/src/components/Todo/Todo.js" />
+        <option value="$PROJECT_DIR$/src/redux/sagas/todos.js" />
+        <option value="$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js" />
+        <option value="$PROJECT_DIR$/src/components/TodoList/TodoList.js" />
         <option value="$PROJECT_DIR$/src/redux/selectors/getVisibleTodos.js" />
         <option value="$PROJECT_DIR$/src/redux/reducers/todos.js" />
       </list>
@@ -220,8 +122,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1331" />
-    <option name="y" value="474" />
+    <option name="x" value="1215" />
+    <option name="y" value="267" />
     <option name="width" value="1602" />
     <option name="height" value="1000" />
   </component>
@@ -243,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,6 +231,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="selectors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-todos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-todos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schemas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -732,14 +657,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.2.0/bin/node" />
   </component>
   <component name="RecentsManager">
@@ -798,6 +722,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -834,12 +764,13 @@
       <workItem from="1496265093129" duration="54000" />
       <workItem from="1496265168523" duration="262000" />
       <workItem from="1496265444721" duration="1611000" />
-      <workItem from="1496267140284" duration="63202000" />
+      <workItem from="1496267140284" duration="73023000" />
+      <workItem from="1496501898797" duration="4117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65129000" />
+    <option name="totallyTimeSpent" value="79067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -851,13 +782,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1331" y="474" width="1602" height="1000" extended-state="0" />
+    <frame x="1215" y="267" width="1602" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17353308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -870,6 +800,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -881,38 +812,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/actions/visibilityFilter.js</url>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/config/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/config.prod.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,9 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,101 +854,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/sagas/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#59#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/sagas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/selectors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/modules/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/modules/visibilityFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/rootReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/modules/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/sagas.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/selectors.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/constants.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/actions.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/actionTypes.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/modules/todos.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/modules/visibilityFilter.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/rootReducer.js" />
+    <entry file="file://$PROJECT_DIR$/src/redux/modules/page.js" />
     <entry file="file://$PROJECT_DIR$/src/redux/store/configureStore.dev.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="29" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,14 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/actions/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1094,29 +909,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/actions/visibilityFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/visibilityFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,59 +924,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/reducers/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/selectors/visibilityFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/selectors/page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/FetchTodos/FetchTodos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/selectors/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/selectors/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/FetchTodos/FetchTodos.js" />
     <entry file="file://$PROJECT_DIR$/src/utils/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1196,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,7 +951,7 @@
         <state relative-caret-position="377">
           <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
           <folding>
-            <marker date="1496457195000" expanded="true" signature="584:896" ph="{&quot;id&quot;: 94562110...}" />
+            <marker date="1496508874000" expanded="true" signature="584:896" ph="{&quot;id&quot;: 94562110...}" />
           </folding>
         </state>
       </provider>
@@ -1214,9 +960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,15 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1244,16 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/FilterLink/FilterLink.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1262,62 +986,258 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Todo/Todo.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="520">
+          <caret line="27" column="44" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/selectors/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.js">
+    <entry file="file://$PROJECT_DIR$/src/redux/schemas/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/schemas/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="63" lean-forward="false" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1496498148000" expanded="true" signature="195:237" ph="{...}" />
+            <marker date="1496498148000" expanded="true" signature="290:345" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redux/actions/todos.js">
+    <entry file="file://$PROJECT_DIR$/src/redux/selectors/visibilityFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/VisibleTodoList/VisibleTodoList.js">
+    <entry file="file://$PROJECT_DIR$/src/redux/sagas/page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        <state relative-caret-position="200">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <marker date="1496502242000" expanded="true" signature="151:242" ph="{...}" />
+            <marker date="1496502242000" expanded="true" signature="162:239" ph="{&quot;type&quot;: PAGE_SET_IS_LOADED...}" />
+            <marker date="1496502242000" expanded="true" signature="207:234" ph="{&quot;isPageLoaded&quot;: isPageLoaded...}" />
+            <marker date="1496502242000" expanded="true" signature="275:320" ph="{...}" />
+            <marker date="1496502242000" expanded="true" signature="286:317" ph="{&quot;type&quot;: PAGE_INIT_HOME...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/visibilityFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <marker date="1496502255000" expanded="true" signature="384:472" ph="{...}" />
+            <marker date="1496502255000" expanded="true" signature="395:469" ph="{&quot;type&quot;: VISIBILITY_FILTER_SET...}" />
+            <marker date="1496502255000" expanded="true" signature="443:464" ph="{&quot;filter&quot;: filter...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <marker date="1496502278000" expanded="true" signature="88:183" ph="{...}" />
+            <marker date="1496502278000" expanded="true" signature="196:373" ph="{...}" />
+            <marker date="1496502278000" expanded="true" signature="221:371" ph="{...}" />
+            <marker date="1496502278000" expanded="true" signature="259:334" ph="..." />
+            <marker date="1496502278000" expanded="true" signature="273:333" ph="{&quot;isPageLoaded&quot;: action.isPageLoaded...}" />
+            <marker date="1496502278000" expanded="true" signature="347:367" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/visibilityFilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <marker date="1496502285000" expanded="true" signature="152:293" ph="{...}" />
+            <marker date="1496502285000" expanded="true" signature="177:291" ph="{...}" />
+            <marker date="1496502285000" expanded="true" signature="218:254" ph="..." />
+            <marker date="1496502285000" expanded="true" signature="267:287" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Todo/Todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <marker date="1496504264000" expanded="true" signature="72:316" ph="{...}" />
+            <marker date="1496504264000" expanded="true" signature="85:314" ph="{...}" />
+            <marker date="1496504264000" expanded="true" signature="106:303" ph="&lt;li/&gt;" />
+            <marker date="1496504264000" expanded="true" signature="171:256" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/sagas/todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="525">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
           <folding>
-            <element signature="e#0#67#0" expanded="true" />
+            <marker date="1496504284000" expanded="true" signature="7:300" ph="..." />
+            <marker date="1496504284000" expanded="true" signature="302:490" ph="//..." />
+            <marker date="1496504284000" expanded="true" signature="522:949" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="618:635" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="642:878" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="893:947" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="986:1050" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1086:1499" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1158:1434" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1181:1306" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1236:1298" ph="{&quot;text&quot;: action.text...}" />
+            <marker date="1496504284000" expanded="true" signature="1447:1497" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1534:1594" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1633:1879" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1641:1811" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1714:1756" ph="{&quot;completed&quot;: action.completed...}" />
+            <marker date="1496504284000" expanded="true" signature="1824:1877" ph="{...}" />
+            <marker date="1496504284000" expanded="true" signature="1917:1983" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/selectors/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <marker date="1496409251000" expanded="true" signature="121:1125" ph="//..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/EditTodo/EditTodo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <marker date="1496508366000" expanded="true" signature="7:186" ph="..." />
+            <marker date="1496508366000" expanded="true" signature="230:318" ph="{...}" />
+            <marker date="1496508366000" expanded="true" signature="300:315" ph="{...}" />
+            <marker date="1496508366000" expanded="true" signature="370:476" ph="{...}" />
+            <marker date="1496508366000" expanded="true" signature="411:473" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/selectors/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/actions/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding>
+            <marker date="1496504113000" expanded="true" signature="635:685" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="646:682" ph="{&quot;type&quot;: TODOS_FETCH_REQUEST...}" />
+            <marker date="1496504113000" expanded="true" signature="728:789" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="739:786" ph="{&quot;type&quot;: TODOS_FETCH_SUCCESS...}" />
+            <marker date="1496504113000" expanded="true" signature="832:893" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="843:890" ph="{&quot;type&quot;: TODOS_FETCH_FAILURE...}" />
+            <marker date="1496504113000" expanded="true" signature="933:991" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="944:988" ph="{&quot;type&quot;: TODOS_ADD_REQUEST...}" />
+            <marker date="1496504113000" expanded="true" signature="1031:1089" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="1042:1086" ph="{&quot;type&quot;: TODOS_ADD_SUCCESS...}" />
+            <marker date="1496504113000" expanded="true" signature="1130:1189" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="1141:1186" ph="{&quot;type&quot;: TODOS_ADD_FAILURE...}" />
+            <marker date="1496504113000" expanded="true" signature="1241:1315" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="1252:1312" ph="{&quot;id&quot;: id...}" />
+            <marker date="1496504113000" expanded="true" signature="1358:1419" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="1369:1416" ph="{&quot;type&quot;: TODOS_TOGGLE_SUCCESS...}" />
+            <marker date="1496504113000" expanded="true" signature="1463:1525" ph="{...}" />
+            <marker date="1496504113000" expanded="true" signature="1474:1522" ph="{&quot;type&quot;: TODOS_TOGGLE_FAILURE...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TodoList/TodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1496508367000" expanded="false" signature="7:75" ph="..." />
+            <marker date="1496508367000" expanded="true" signature="110:448" ph="{...}" />
+            <marker date="1496508367000" expanded="true" signature="123:446" ph="{...}" />
+            <marker date="1496508367000" expanded="true" signature="185:435" ph="&lt;ul/&gt;" />
+            <marker date="1496508367000" expanded="true" signature="240:411" ph="&lt;Todo/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/VisibleTodoList/VisibleTodoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1496498532000" expanded="true" signature="7:198" ph="..." />
+            <marker date="1496498532000" expanded="true" signature="242:306" ph="{...}" />
+            <marker date="1496498532000" expanded="true" signature="253:303" ph="{...}" />
+            <marker date="1496498532000" expanded="true" signature="358:464" ph="{...}" />
+            <marker date="1496498532000" expanded="true" signature="399:461" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/selectors/getVisibleTodos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="460">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1496508763000" expanded="false" signature="7:229" ph="..." />
+            <marker date="1496508763000" expanded="true" signature="280:408" ph="[...]" />
+            <marker date="1496508763000" expanded="true" signature="462:941" ph="{...}" />
+            <marker date="1496508763000" expanded="true" signature="608:937" ph="{...}" />
+            <marker date="1496508763000" expanded="true" signature="662:684" ph="..." />
+            <marker date="1496508763000" expanded="true" signature="743:790" ph="..." />
+            <marker date="1496508763000" expanded="true" signature="846:894" ph="..." />
+            <marker date="1496508763000" expanded="true" signature="909:931" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/reducers/todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="390">
+          <caret line="81" column="6" lean-forward="false" selection-start-line="81" selection-start-column="6" selection-end-line="91" selection-end-column="8" />
           <folding />
         </state>
       </provider>
