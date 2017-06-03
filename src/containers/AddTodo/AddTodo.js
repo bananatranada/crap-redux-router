@@ -7,7 +7,7 @@ const mapStateToProps = (dispatch, props) => ({});
 
 const mapDispatchToProps = (dispatch, props) => ({
   addTodo: text => {
-    dispatch(actions.todosAddRequested(text));
+    dispatch(actions.todosAddRequest(text));
   },
 });
 

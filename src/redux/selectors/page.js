@@ -1,1 +1,1 @@
-export const pageIsLoadedSelector = state => state.page.isLoaded;
+export const pageGetIsLoaded = state => state.page.isLoaded;

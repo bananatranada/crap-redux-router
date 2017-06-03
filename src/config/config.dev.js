@@ -1,5 +1,5 @@
 const config = {
-  proxy: 'http://localhost:3001',
+  api: 'http://localhost:3001/api/v1',
 };
 
 export default config;

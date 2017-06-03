@@ -1,68 +1,93 @@
 export const TODOS_ADD = 'TODOS_ADD';
 export const TODOS_TOGGLE = 'TODOS_TOGGLE';
-export const TODOS_FETCH_REQUESTED = 'TODOS_FETCH_REQUESTED';
-export const TODOS_FETCH_SUCCEEDED = 'TODOS_FETCH_SUCCEEDED';
-export const TODOS_FETCH_FAILED = 'TODOS_FETCH_FAILED';
-export const TODOS_ADD_REQUESTED = 'TODOS_ADD_REQUESTED';
-export const TODOS_ADD_SUCCEEDED = 'TODOS_ADD_SUCCEEDED';
-export const TODOS_ADD_FAILED = 'TODOS_ADD_FAILED';
-export const TODOS_EDIT_REQUESTED = 'TODOS_EDIT_REQUESTED';
-export const TODOS_EDIT_SUCCEEDED = 'TODOS_EDIT_SUCCEEDED';
-export const TODOS_EDIT_FAILED = 'TODOS_EDIT_FAILED';
+export const TODOS_FETCH_REQUEST = 'TODOS_FETCH_REQUEST';
+export const TODOS_FETCH_SUCCESS = 'TODOS_FETCH_SUCCESS';
+export const TODOS_FETCH_FAILURE = 'TODOS_FETCH_FAILURE';
+export const TODOS_ADD_REQUEST = 'TODOS_ADD_REQUEST';
+export const TODOS_ADD_SUCCESS = 'TODOS_ADD_SUCCESS';
+export const TODOS_ADD_FAILURE = 'TODOS_ADD_FAILURE';
+export const TODOS_TOGGLE_REQUEST = 'TODOS_TOGGLE_REQUEST';
+export const TODOS_TOGGLE_SUCCESS = 'TODOS_TOGGLE_SUCCESS';
+export const TODOS_TOGGLE_FAILURE = 'TODOS_TOGGLE_FAILURE';
 
 let nextTodoId = 0;
 
-export const todosAdd = text => ({
-  type: TODOS_ADD,
-  id: nextTodoId++,
-  text,
-});
+export function todosAdd(text) {
+  return {
+    type: TODOS_ADD,
+    id: nextTodoId++,
+    text,
+  };
+}
 
-export const todosToggle = id => ({
-  type: TODOS_TOGGLE,
-  id,
-});
+export function todosToggle(id) {
+  return {
+    type: TODOS_TOGGLE,
+    id,
+  };
+}
 
-export const todosFetchRequested = () => ({
-  type: TODOS_FETCH_REQUESTED,
-});
+export function todosFetchRequest() {
+  return {
+    type: TODOS_FETCH_REQUEST,
+  };
+}
 
-export const todosFetchSucceeded = todos => ({
-  type: TODOS_FETCH_SUCCEEDED,
-  todos,
-});
+export function todosFetchSuccess(todos) {
+  return {
+    todos,
+    type: TODOS_FETCH_SUCCESS,
+  };
+}
 
-export const todosFetchFailed = error => ({
-  type: TODOS_FETCH_FAILED,
-  error,
-});
+export function todosFetchFailure(error) {
+  return {
+    type: TODOS_FETCH_FAILURE,
+    error,
+  };
+}
 
-export const todosAddRequested = text => ({
-  type: TODOS_ADD_REQUESTED,
-  id: nextTodoId++,
-  text,
-});
+export function todosAddRequest(text) {
+  return {
+    type: TODOS_ADD_REQUEST,
+    id: nextTodoId++,
+    text,
+  };
+}
 
-export const todosAddSucceeded = todo => ({
-  type: TODOS_ADD_SUCCEEDED,
-  todo,
-});
+export function todosAddSuccess(todo) {
+  return {
+    type: TODOS_ADD_SUCCESS,
+    todo,
+  };
+}
 
-export const todosAddFailed = error => ({
-  type: TODOS_ADD_FAILED,
-  error,
-});
+export function todosAddFailure(error) {
+  return {
+    type: TODOS_ADD_FAILURE,
+    error,
+  };
+}
 
-export const todosEditRequested = () => ({
-  type: TODOS_EDIT_REQUESTED,
-});
+export function todosToggleRequest(id, completed) {
+  console.log(completed);
+  return {
+    type: TODOS_TOGGLE_REQUEST,
+    id,
+    completed,
+  };
+}
 
-export const todosEditSucceeded = todos => ({
-  type: TODOS_EDIT_SUCCEEDED,
-  todos,
-});
+export function todosToggleSuccess(todo) {
+  return {
+    type: TODOS_TOGGLE_SUCCESS,
+    todo,
+  };
+}
 
-export const todosEditFailed = error => ({
-  type: TODOS_EDIT_FAILED,
-  error,
-});
+export function todosToggleFailure(error) {
+  return {
+    type: TODOS_TOGGLE_FAILURE,
+    error,
+  };
+}

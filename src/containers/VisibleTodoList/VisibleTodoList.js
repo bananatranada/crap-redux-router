@@ -11,8 +11,8 @@ const mapStateToProps = (state, props) => {
 };
 
 const mapDispatchToProps = (dispatch, props) => ({
-  onTodoClick: id => {
-    dispatch(actions.todosToggle(id));
+  handleTodoToggle: (id, completed) => {
+    dispatch(actions.todosToggleRequest(id, completed));
   },
 });
 

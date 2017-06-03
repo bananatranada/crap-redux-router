@@ -5,10 +5,7 @@ import * as visibilityFilterSelectors from './visibilityFilter';
 import * as todosSelectors from './todos';
 
 export const getVisibleTodos = createSelector(
-  [
-    visibilityFilterSelectors.visibilityFilterSelector,
-    todosSelectors.todosItemsSelector,
-  ],
+  [visibilityFilterSelectors.visibilityFilterGet, todosSelectors.todosGetItems],
   (visibilityFilter, todos) => {
     switch (visibilityFilter) {
       case actions.VISIBILITY_FILTER_STATE_SHOW_ALL:

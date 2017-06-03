@@ -1,3 +1,3 @@
-export const todosItemsSelector = state => state.todos.items;
-export const todosIfFetchingSelector = state => state.todos.isFetching;
-export const todosFetchErrorSelector = state => state.todos.fetchError;
+export const todosGetItems = state => state.todos.items;
+export const todosGetIsFetching = state => state.todos.isFetching;
+export const todosGetFetchError = state => state.todos.fetchError;

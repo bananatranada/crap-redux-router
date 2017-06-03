@@ -27,12 +27,11 @@
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.2.0",
     "redux-saga": "^0.15.3",
-    "redux-thunk": "^2.2.0",
     "reselect": "^3.0.0"
   },
   "scripts": {
     "dev": "concurrently --kill-others \"npm run start\" \"npm run api\"",
-    "api": "json-server --watch ./api/db.json --port 3001",
+    "api": "json-server --watch ./api/db.json --port 3001 --routes ./api/routes.json",
     "generate-mock-data": "node api/generateMockData",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",

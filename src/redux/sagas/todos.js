@@ -1,56 +1,57 @@
-import { put, takeEvery, takeLatest, call } from 'redux-saga/effects';
+import { put, takeLatest, call, select } from 'redux-saga/effects';
 import fetch from 'isomorphic-fetch';
 
 import config from '../../config';
 import * as actions from '../actions';
-
-// normalize? https://github.com/reactjs/redux/blob/master/examples/real-world/src/middleware/api.js
-function fetchApi(url, verb) {
-  return fetch(`${config.proxy}${url}`).then(res => res.json());
-  // .then(json => json.data.children.map(child => child.data));
-}
+import * as selectors from '../selectors';
+import * as utils from '../../utils';
 
 export function* todosFetch() {
+  let todos = yield select(selectors.todosGetItems);
+  if (todos.length > 0) {
+    return;
+  }
   try {
-    const todos = yield call(fetchApi, '/todos');
-    yield put(actions.todosFetchSucceeded(todos));
-  } catch (err) {
-    yield put(actions.todosFetchFailed(err));
+    // const todos = yield call(fetchApi, '/to1dos');
+    todos = yield call(utils.api, '/todos', 'GET');
+    yield put(actions.todosFetchSuccess(todos));
+  } catch (error) {
+    yield put(actions.todosFetchFailure(error));
   }
 }
 
 export function* watchTodosFetch() {
-  yield takeLatest(actions.TODOS_FETCH_REQUESTED, todosFetch);
-}
-
-function todosAddApi(todo) {
-  return fetch('http://localhost:3001/todos', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(todo),
-  }).then(res => res.json());
+  yield takeLatest(actions.TODOS_FETCH_REQUEST, todosFetch);
 }
 
 export function* todosAdd(action) {
   try {
-    const todo = yield call(todosAddApi, {
+    const todo = yield call(utils.api, '/todos', 'POST', {
       text: action.text,
       completed: false,
     });
-    yield put(actions.todosAddSucceeded(todo));
+    yield put(actions.todosAddSuccess(todo));
   } catch (err) {
-    yield put(actions.todosAddFailed(err));
+    yield put(actions.todosAddFailure(err));
   }
 }
 
 export function* watchAddTodo() {
-  yield takeLatest(actions.TODOS_ADD_REQUESTED, todosAdd);
+  yield takeLatest(actions.TODOS_ADD_REQUEST, todosAdd);
 }
 
-export function* todosEdit(todo) {}
+export function* todosToggle(action) {
+  try {
+    const todo = yield call(utils.api, `/todos/${action.id}`, 'PATCH', {
+      completed: !action.completed,
+    });
+    console.log(todo);
+    yield put(actions.todosToggleSuccess(todo));
+  } catch (err) {
+    yield put(actions.todosToggleFailure(err));
+  }
+}
 
-export function* watchEditTodo() {
-  yield takeLatest(actions.TODOS_EDIT_REQUESTED, todosEdit);
+export function* watchToggleTodo() {
+  yield takeLatest(actions.TODOS_TOGGLE_REQUEST, todosToggle);
 }
