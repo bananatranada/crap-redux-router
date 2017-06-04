@@ -4,7 +4,6 @@ import TodoContainer from '../../containers/TodoContainer/TodoContainer';
 
 class TodoList extends Component {
   render() {
-    console.log('TodoList', 'render()');
     return (
       <ul>
         {this.props.todoIds.map(todoId => (

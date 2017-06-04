@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
 
-import Home from './pages/Home/Home';
 import InitHome from './containers/InitHome/InitHome';
 import NotFound from './pages/NotFound/NotFound';
 

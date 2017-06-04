@@ -6,9 +6,11 @@ import * as todosSelectors from './todos';
 
 export const makeGetVisibleTodo = () => {
   return createSelector(
-    [visibilityFilterSelectors.getVisibilityFilter, todosSelectors.getTodo],
+    [
+      visibilityFilterSelectors.getVisibilityFilter,
+      todosSelectors.todosGetTodoEntity,
+    ],
     (visibilityFilter, todo) => {
-      console.log('makeGetVisibleTodo', todo);
       switch (visibilityFilter) {
         case actions.VISIBILITY_FILTER_STATE_SHOW_ALL:
           return todo;

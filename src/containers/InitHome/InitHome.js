@@ -7,18 +7,16 @@ import Home from '../../pages/Home/Home';
 class InitPageHome extends Component {
   componentDidMount() {
     // make sure all the fetches are returned in order to change isLoading to false (also make sure images and other media are loaded
-    // actions.pageInitHome();
+    // when changing page, call unloadPage
     this.props.loadPage();
   }
 
   render() {
-    return <Home isPageLoaded={this.props.isLoaded} />;
+    return <Home />;
   }
 }
 
-const mapStateToProps = (state, props) => ({
-  isPageLoaded: state.page.isLoaded,
-});
+const mapStateToProps = (state, props) => ({});
 
 const mapDispatchToProps = (dispatch, props) => ({
   loadPage: () => dispatch(actions.pageInitHome()),

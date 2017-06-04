@@ -9,7 +9,7 @@ class Todo extends Component {
     return (
       <li
         onClick={() =>
-          this.props.handleTodoToggle(
+          this.props.todosToggleRequest(
             this.props.todo.id,
             !this.props.todo.completed
           )}

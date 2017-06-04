@@ -1,27 +1,17 @@
 import { put, takeLatest, call, select } from 'redux-saga/effects';
-import fetch from 'isomorphic-fetch';
 
-import config from '../../config';
 import * as actions from '../actions';
 import * as selectors from '../selectors';
 import * as utils from '../../utils';
 import * as schemas from '../schemas';
 
-// function createTodosSchema(obj) {
-//   const todo = new schema.Entity('todos', {}, { idAttribute: 'id' });
-//   const todosSchema = [todo];
-//   return normalize(obj, todosSchema);
-// }
-
 export function* todosFetch() {
-  const currentTodos = yield select(selectors.getTodosResult);
+  const currentTodos = yield select(selectors.todosGetResult);
   if (currentTodos.length > 0) {
     return;
   }
   try {
-    // const todos = yield call(fetchApi, '/to1dos');
     const todos = yield call(utils.api, '/todos', 'GET');
-    // console.log(createTodosSchema(todos));
     yield put(actions.todosFetchSuccess(schemas.normalizeTodos(todos)));
   } catch (error) {
     yield put(actions.todosFetchFailure(error));
@@ -33,7 +23,7 @@ export function* watchTodosFetch() {
 }
 
 export function* todosAdd(action) {
-  const currentTodos = yield select(selectors.getTodosResult);
+  const currentTodos = yield select(selectors.todosGetResult);
 
   try {
     let todo;

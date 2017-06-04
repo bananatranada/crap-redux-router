@@ -10,8 +10,6 @@ export const VISIBILITY_FILTER_STATE_SHOW_COMPLETED =
 export function visibilityFilterSet(filter) {
   return {
     type: VISIBILITY_FILTER_SET,
-    payload: {
-      filter,
-    },
+    filter,
   };
 }

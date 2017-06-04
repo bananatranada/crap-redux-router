@@ -6,19 +6,21 @@ import Todo from '../../components/Todo/Todo';
 
 function makeMapStateToProps() {
   const getVisibleTodo = selectors.makeGetVisibleTodo();
-  const mapStateToProps = (state, props) => {
+  function mapStateToProps(state, props) {
     return {
       todo: getVisibleTodo(state, props),
     };
-  };
+  }
   return mapStateToProps;
 }
 
-const mapDispatchToProps = (dispatch, props) => ({
-  handleTodoToggle: (id, completed) => {
-    dispatch(actions.todosToggleRequest(id, completed));
-  },
-});
+function mapDispatchToProps(dispatch, props) {
+  return {
+    todosToggleRequest: (id, completed) => {
+      dispatch(actions.todosToggleRequest(id, completed));
+    },
+  };
+}
 
 const TodoContainer = connect(makeMapStateToProps, mapDispatchToProps)(Todo);
 

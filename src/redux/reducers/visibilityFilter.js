@@ -6,7 +6,7 @@ export default function visibilityFilterReducer(
 ) {
   switch (action.type) {
     case actions.VISIBILITY_FILTER_SET:
-      return action.payload.filter;
+      return action.filter;
     default:
       return state;
   }
